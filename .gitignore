@@ -1,0 +1,24 @@
+# Python
+backend/venv/
+backend/__pycache__/
+backend/app/__pycache__/
+backend/app/routes/__pycache__/
+*.pyc
+
+# Node / React
+node_modules/
+audioagent/node_modules/
+audioagent/dist/
+
+# Environment secrets (DO NOT COMMIT KEYS)
+.env
+backend/.env
+audioagent/.env.local
+audioagent/.env
+
+# IDE and OS files
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+ngrok.log
