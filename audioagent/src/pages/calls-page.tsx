@@ -52,7 +52,7 @@ export function CallsPage() {
               <p>Summary: {log.summary}</p>
             </div>
             <div className='grid gap-2'>
-              {log.transcript.map((line, index) => (
+              {log.transcript.map((line: any, index: number) => (
                 <div
                   key={index}
                   className={`rounded-xl p-3 text-sm ${

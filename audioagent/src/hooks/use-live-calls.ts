@@ -23,7 +23,7 @@ export function useLiveCalls() {
       // Vapi sends transcript string at the end of the call, so active calls might be empty
       // We will show a placeholder if empty so they know it is connecting
       const rawTranscript = log.transcript && log.transcript.length > 0 
-        ? log.transcript.map(t => `${t.speaker}: ${t.message}`).join('\n') 
+        ? log.transcript.map((t: any) => `${t.speaker}: ${t.message}`).join('\n') 
         : 'Connecting to customer...'
 
       return {

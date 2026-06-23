@@ -84,7 +84,7 @@ export function AnalyticsPage() {
                   outerRadius={90}
                   animationDuration={900}
                 >
-                  {data.outcomeData.map((entry, i) => (
+                  {data.outcomeData.map((entry: any, i: number) => (
                     <Cell key={entry.name} fill={colors[i % colors.length]} />
                   ))}
                 </Pie>
@@ -99,7 +99,7 @@ export function AnalyticsPage() {
             <CardTitle>Campaign Performance / Qualification Rate</CardTitle>
           </CardHeader>
           <CardContent className='space-y-2 text-sm'>
-            {data.campaignPerformance.map((campaign) => (
+            {data.campaignPerformance.map((campaign: any) => (
               <div key={campaign.id} className='rounded-xl border border-slate-200 p-3 dark:border-slate-700'>
                 <div className='flex items-center justify-between'>
                   <p className='font-medium'>{campaign.name}</p>
